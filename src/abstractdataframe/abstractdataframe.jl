@@ -13,6 +13,7 @@ abstract AbstractDataFrame
 ##############################################################################
 
 # index(df) => AbstractIndex
+# columns(df) => Iterable of AbstractVectors
 # nrow(df) => Int
 # ncol(df) => Int
 # getindex(...)
