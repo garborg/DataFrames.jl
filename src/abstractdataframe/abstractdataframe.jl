@@ -396,5 +396,5 @@ function Base.hash(df::AbstractDataFrame)
     for i in 1:size(df, 2)
         h = hash(df[i], h)
     end
-    return uint(h)
+    return @compat UInt(h)
 end

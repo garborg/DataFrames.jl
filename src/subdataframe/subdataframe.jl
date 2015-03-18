@@ -32,7 +32,7 @@ function SubDataFrame(parent::DataFrame, row::Integer)
 end
 
 function SubDataFrame{S <: Integer}(parent::DataFrame, rows::AbstractVector{S})
-    return sub(parent, int(rows))
+    return sub(parent, Int(rows))
 end
 
 
